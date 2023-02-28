@@ -9,6 +9,7 @@ from page_object_pattern.tests.conftest import setup
 @pytest.mark.usefixtures("setup")
 class TestHotelSearch:
 
+
     @allure.title("This is title")
     @allure.description("Test description")
     def test_hotel_search(self, setup):

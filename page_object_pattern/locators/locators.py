@@ -9,7 +9,7 @@ class SearchHotelLocators:
     child_input_id = "childInput"
     search_button_xpath = "//button[text()=' Search']"
 
-class SearchResultLocators:
 
+class SearchResultLocators:
     hotel_names_xpath = "//h4[contains(@class,'list_title')]//b"
     hotel_prices_xpath = "//div[contains(@class, 'price_tab')]//b"
