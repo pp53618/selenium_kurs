@@ -11,6 +11,7 @@ import allure
 #        self.hotel_names_xpath = "//h4[contains(@class,'list_title')]//b"
 #        self.hotel_prices_xpath = "//div[contains(@class, 'price_tab')]//b"
 
+
 class SearchResultsPage:
 
     def __init__(self, driver):
@@ -18,7 +19,6 @@ class SearchResultsPage:
 #        self.hotel_names_xpath = SearchResultLocators.hotel_names_xpath
 #        self.hotel_prices_xpath = SearchResultLocators.hotel_prices_xpath
         self.logger = logging.getLogger(__name__)
-
 
     @allure.step("Checking resuts travellers")
     def get_hotel_names(self):
@@ -29,8 +29,6 @@ class SearchResultsPage:
         for name in names:
             self.logger.info(name)
         return names
-
-
 
     def get_hotel_prices(self):
         prices = self.driver.find_elements(By.XPATH, SearchResultLocators.hotel_prices_xpath)

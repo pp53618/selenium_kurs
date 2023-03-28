@@ -7,6 +7,7 @@ from page_object_pattern.tests.conftest import setup
 from page_object_pattern.utils.read_excel import ExcelReader
 from page_object_pattern.utils.search_data import SearchData
 
+
 @pytest.mark.usefixtures("setup")
 class TestHotelSearch:
 
